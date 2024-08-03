@@ -1,28 +1,6 @@
-/** @format */
 
 "use strict";
-// console.log(document.querySelector(".message").textContent);
 
-// document.querySelector(".message").textContent = "my name is himanshu sharma";
-// console.log(document.querySelector(".message").textContent);
-
-// document.querySelector(".score").textContent = 32330;
-// console.log(document.querySelector(".score").textContent);
-
-// document.querySelector(".highscore").textContent = 4939439;
-// console.log(document.querySelector(".highscore").textContent);
-
-// document.querySelector(".guess").value = 20;
-// console.log(document.querySelector(".guess").textContent);
-
-// document.querySelector(".check").addEventListener("click", function () {
-//   const guess = Number(document.querySelector(".guess").value);
-
-//   console.log(guess, typeof guess);
-
-//   if (!guess) {
-//   }
-// });
 
 const secretnumber = Math.trunc(Math.random() * 20) + 1;
 document.querySelector(".number").textContent = secretnumber;
@@ -34,7 +12,7 @@ document.querySelector(".again").addEventListener("click", function () {
   score = 0;
 
   document.querySelector(".score").textContent = 0;
-  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector("body").style.backgroundColor = "#ff0000";
 });
 
 document.querySelector(".check").addEventListener("click", function () {
